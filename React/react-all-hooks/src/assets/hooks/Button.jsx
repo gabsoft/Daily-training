@@ -1,4 +1,4 @@
-import React, { forwardRef, useImperativeHandle, useState } from "react";
+import React, { forwardRef, useImperativeHandle, useState } from 'react';
 
 const Button = forwardRef((props, ref) => {
   const [toggle, setToggle] = useState(false);
@@ -10,7 +10,7 @@ const Button = forwardRef((props, ref) => {
   }));
   return (
     <>
-      <button>Button From Child</button>
+      <span>Button From Child</span>
       {toggle && <span>Toggle</span>}
     </>
   );

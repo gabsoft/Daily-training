@@ -1,5 +1,4 @@
-import React from "react";
-import { useReducer } from "react";
+import React, { useReducer } from 'react';
 
 // An alternative to useState with multiple states
 
@@ -9,12 +8,12 @@ function ReducerTutorial() {
 
   const reducer = (state, action) => {
     switch (action.type) {
-      case "INCREMENT":
+      case 'INCREMENT':
         return {
           count: state.count + 1,
           showText: state.showText,
         };
-      case "TOOGLESHOWTEXT":
+      case 'TOOGLESHOWTEXT':
         return {
           count: state.count,
           showText: !state.showText,
@@ -35,9 +34,10 @@ function ReducerTutorial() {
       <div>{state.count}</div>
       {state.showText && <div>This is a text</div>}
       <button
+        type="button"
         onClick={() => {
-          dispatch({ type: "INCREMENT" })
-          dispatch({ type: "TOOGLESHOWTEXT" })
+          dispatch({ type: 'INCREMENT' });
+          dispatch({ type: 'TOOGLESHOWTEXT' });
         }}
       >
         Increment

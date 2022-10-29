@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { AppContext } from "./ContextTutorial";
+import React, { useContext } from 'react';
+import AppContext from './Context';
 
 function Login() {
   const { setUsername } = useContext(AppContext);

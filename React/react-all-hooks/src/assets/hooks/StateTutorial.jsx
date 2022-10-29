@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from 'react';
 
 function StateTutorial() {
   const [count, setCounter] = useState(0);
@@ -10,7 +9,7 @@ function StateTutorial() {
     <>
       <h2>State Tutorial</h2>
       <div>{count}</div>
-      <button onClick={handleButtton}>Increment</button>
+      <button type="button" onClick={handleButtton}>Increment</button>
     </>
   );
 }

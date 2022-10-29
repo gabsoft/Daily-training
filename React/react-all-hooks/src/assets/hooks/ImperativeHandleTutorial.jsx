@@ -1,11 +1,12 @@
-import React, { useRef } from "react";
-import Button from "./Button";
+import React, { useRef } from 'react';
+import Button from './Button';
 
 function ImperativeHandle() {
   const buttonRef = useRef(null);
   return (
     <div>
       <button
+        type="button"
         onClick={() => {
           buttonRef.current.alterToggle();
         }}
