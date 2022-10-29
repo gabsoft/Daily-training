@@ -16,6 +16,9 @@
 	"lint-staged": {
 		"*.jsx": [
 			"eslint --fix"
+		],
+		"*.js": [
+			"eslint --fix"
 		]
 	}
 }
