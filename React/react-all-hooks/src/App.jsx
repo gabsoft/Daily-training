@@ -13,7 +13,7 @@ function App() {
       <ReducerTutorial />
       <EffectTutorial />
       <RefTutorial />
-      <LayoutEffectTutorial/>
+      <LayoutEffectTutorial />
     </div>
   );
 }
