@@ -4,7 +4,7 @@ import Login from './Login';
 import User from './User';
 
 function ContextTutorial() {
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState('Galego');
 
   const value = useMemo(() => ({
     username, setUsername,

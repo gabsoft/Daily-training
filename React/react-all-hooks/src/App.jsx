@@ -5,6 +5,7 @@ import ReducerTutorial from './assets/hooks/ReducerTutorial';
 import EffectTutorial from './assets/hooks/EffectTutorial';
 import RefTutorial from './assets/hooks/RefTutorial';
 import LayoutEffectTutorial from './assets/hooks/LayoutEffect';
+import ContextTutorial from './assets/hooks/ContextTutorial';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <EffectTutorial />
       <RefTutorial />
       <LayoutEffectTutorial />
+      <ContextTutorial />
     </div>
   );
 }
