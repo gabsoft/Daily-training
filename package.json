@@ -14,9 +14,8 @@
 		"test": "jasmine"
 	},
 	"lint-staged": {
-		"*.js, *.jsx": [
-			"eslint --fix",
-			"git add"
+		"*.jsx": [
+			"eslint --fix"
 		]
 	}
 }
