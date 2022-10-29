@@ -8,8 +8,10 @@
 		"test": "jasmine"
 	},
 	"husky": {
-		"pre-commit": "pnpm test",
-		"pre-push": ""
+		"hooks": {
+			"pre-commit": "pnpm test",
+			"pre-push": ""
+		}
 	}
 	
 }
