@@ -1,6 +1,9 @@
 {
 	"devDependencies": {
+		"@commitlint/cli": "^17.1.2",
+		"@commitlint/config-conventional": "^17.1.0",
 		"cross-env": "^7.0.3",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^7.32.0 || ^8.2.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-plugin-import": "^2.25.3",
@@ -12,7 +15,8 @@
 		"lint-staged": "^13.0.3"
 	},
 	"scripts": {
-		"test": "jasmine"
+		"test": "jasmine",
+		"commit": "cz"
 	},
 	"lint-staged": {
 		"*.jsx": [
@@ -21,5 +25,13 @@
 		"*.js": [
 			"eslint --fix"
 		]
+	},
+	"husky": {
+		"hooks": {}
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
