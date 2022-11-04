@@ -18,7 +18,7 @@ function App() {
           return <Item key={item} title={item} />
         })}
       </ul>
-    </div>
+    </div> 
   );
 }
 
